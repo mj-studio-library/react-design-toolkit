@@ -1,6 +1,6 @@
 {
   "name": "@mj-studio/react-design-toolkit",
-  "version": "0.0.41",
+  "version": "0.0.42",
   "description": "A React Design Toolkit top of the chakra ui",
   "repository": {
     "type": "git",
@@ -13,7 +13,7 @@
     "icon": "zx tool/svg_gen.mjs"
   },
   "bin": {
-    "theme": "./bin/theme.sh"
+    "theme": "bin/theme.js"
   },
   "dependencies": {
     "@mj-studio/js-util": "^1.0.19",
