@@ -25,7 +25,9 @@ const Card: ComponentStyleConfig = {
 
 type ExtendTheme = (...extensions: Array<ThemeOverride>) => Dict;
 
-export default (extendTheme as ExtendTheme)(withDefaultColorScheme({ colorScheme: 'orange' }), {
+const _extend = extendTheme as ExtendTheme;
+
+const baseTheme = _extend(withDefaultColorScheme({ colorScheme: 'orange' }), {
   config,
   colors: palette,
   space: DT.space,
@@ -153,3 +155,9 @@ export default (extendTheme as ExtendTheme)(withDefaultColorScheme({ colorScheme
 
   textStyles: DT.text,
 });
+
+const extendBaseTheme = (...extensions: Array<ThemeOverride>) => {
+  return _extend(baseTheme, ...extensions);
+};
+
+export { baseTheme, extendBaseTheme };

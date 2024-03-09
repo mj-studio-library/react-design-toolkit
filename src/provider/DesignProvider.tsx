@@ -1,17 +1,22 @@
 import type { PropsWithChildren } from 'react';
 import React from 'react';
-import { ChakraProvider, ColorModeScript, cookieStorageManagerSSR } from '@chakra-ui/react';
+import {
+  baseTheme,
+  ChakraProvider,
+  ColorModeScript,
+  cookieStorageManagerSSR,
+} from '@chakra-ui/react';
+import type { Dict } from '@chakra-ui/utils';
 import type { RequestCookie } from 'next/dist/compiled/@edge-runtime/cookies';
 
 import { AppAlertDialogProvider } from '../component/dialog/AppAlertDialog';
 import StyledComponentsRegistry from '../registry';
-import ChakraTheme from '../server/styles/ChakraTheme';
 
 import { InitialCookiesProvider } from './InitialCookieProvider';
 
-type Props = PropsWithChildren<{ cookies: RequestCookie[]; cookiesString: string }>;
+type Props = PropsWithChildren<{ cookies: RequestCookie[]; cookiesString: string; theme?: Dict }>;
 
-export const DesignProvider = ({ children, cookies, cookiesString }: Props) => {
+export const DesignProvider = ({ children, cookies, cookiesString, theme }: Props) => {
   return (
     <InitialCookiesProvider cookies={cookies}>
       <ColorModeScript
@@ -25,7 +30,7 @@ export const DesignProvider = ({ children, cookies, cookiesString }: Props) => {
       <StyledComponentsRegistry>
         <ChakraProvider
           colorModeManager={cookieStorageManagerSSR(cookiesString)}
-          theme={ChakraTheme}
+          theme={theme ?? baseTheme}
         >
           <AppAlertDialogProvider>{children}</AppAlertDialogProvider>
         </ChakraProvider>
