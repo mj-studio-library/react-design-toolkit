@@ -4,20 +4,24 @@ A opinioned design system toolkit tailored for React applications using Next.js
 
 This package is top of the Chakra UI, incorporating related libraries internally.
 
-- @chakra-ui/next-js
-- @chakra-ui/react
-- @emotion/react
-- @emotion/styled
-- framer-motion
-- styled-components
-- styled-system
-
 The all libraries are dependency of chakra-ui itself.
 
 ## Install
 
 ```
 yarn add @mj-studio/react-design-toolkit
+```
+
+Install Peer Dependencies
+
+```
+"@chakra-ui/next-js": "^2.2.0",
+"@chakra-ui/react": "^2.8.1",
+"@emotion/react": "^11.11.3",
+"@emotion/styled": "^11.11.0",
+"framer-motion": "^11.0.8",
+"styled-components": "^6.1.8",
+"styled-system": "^5.1.5"
 ```
 
 ## Usage

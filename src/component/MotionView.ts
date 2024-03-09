@@ -3,9 +3,8 @@ import type { LinkProps } from '@chakra-ui/next-js';
 import type { CustomDomComponent } from 'framer-motion';
 import { motion } from 'framer-motion';
 
-import { Link } from '../server/component/Link';
-
 import { Column, ColumnCenter } from './base/Column';
+import { Link } from './base/Link';
 import { Row, RowCenter } from './base/Row';
 import type { ViewProps } from './base/View';
 import { View } from './base/View';

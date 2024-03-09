@@ -1,6 +1,6 @@
 import type { LinkProps } from '@chakra-ui/next-js';
 
-import { Link } from '../../server/component/Link';
+import { Link } from './Link';
 
 type Props = {} & LinkProps;
 
