@@ -2,9 +2,9 @@
 // const babel = require('@rollup/plugin-babel');
 import commonjs from '@rollup/plugin-commonjs';
 import nodeResolve from '@rollup/plugin-node-resolve';
-import terser from '@rollup/plugin-terser';
 import peerDepsExternal from 'rollup-plugin-peer-deps-external';
 import postcss from 'rollup-plugin-postcss';
+import preserveDirectives from 'rollup-plugin-preserve-directives';
 import ts from 'rollup-plugin-typescript2';
 
 export default [
@@ -15,13 +15,14 @@ export default [
         dir: 'dist',
         format: 'cjs',
         interop: 'auto',
+        preserveModules: true,
       },
       // {
       //   dir: 'esm',
       //   format: 'esm',
       //   interop: 'auto',
-      //   preserveModules: false,
-      //   // preserveModulesRoot: 'src',
+      //   preserveModules: true,
+      //   preserveModulesRoot: 'src',
       // },
     ],
     external: ['react'],
@@ -44,7 +45,8 @@ export default [
       //   ],
       // }),
       ts({ tsconfig: './tsconfig.json' }),
-      terser(),
+      preserveDirectives({ suppressPreserveModulesWarning: true }),
+      // terser(),
     ],
   },
 ];
