@@ -24,3 +24,5 @@ export * from './src/server/styles/DesignToken';
 export * from './src/server/styles/palette';
 export * from './src/component/base/Img';
 export * from './src/component/base/Link';
+export * from './src/component/dialog/AppAlertDialog';
+export * from './src/component/dialog/Feedback';
