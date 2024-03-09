@@ -23,4 +23,4 @@ export * from './src/hook/useDarkTheme';
 export * from './src/hook/usePalette';
 export * from './src/provider/DesignProvider';
 export * from './src/styles/system/DesignToken';
-export * from './src/styles/theme/palette';
+export * from './src/styles/system/palette';

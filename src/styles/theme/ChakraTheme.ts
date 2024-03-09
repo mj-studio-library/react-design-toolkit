@@ -1,3 +1,5 @@
+'use client';
+
 import type {
   ComponentStyleConfig,
   StyleFunctionProps,
@@ -9,8 +11,7 @@ import { mode } from '@chakra-ui/theme-tools';
 import type { Dict } from '@chakra-ui/utils';
 
 import { DT } from '../system/DesignToken';
-
-import { darkPalette, lightPalette, palette } from './palette';
+import { darkPalette, lightPalette, palette } from '../system/palette';
 
 const config: ThemeConfig = {
   initialColorMode: 'dark',
