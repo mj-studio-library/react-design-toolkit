@@ -5,7 +5,7 @@ import { Column } from './Column';
 
 type Props = PropsWithChildren<{ center?: boolean }> & ColumnProps;
 
-const AbsoluteFill = ({ children, center = false, ...rest }: Props) => {
+export const AbsoluteFill = ({ children, center = false, ...rest }: Props) => {
   return (
     <Column
       {...(center ? { alignSelf: 'center', justifyContent: 'center' } : undefined)}
@@ -20,5 +20,3 @@ const AbsoluteFill = ({ children, center = false, ...rest }: Props) => {
     </Column>
   );
 };
-
-export default AbsoluteFill;

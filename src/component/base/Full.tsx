@@ -5,7 +5,7 @@ import { Column } from './Column';
 
 type Props = PropsWithChildren<{ center?: boolean }> & ColumnProps;
 
-const Full = ({ children, center = false, ...rest }: Props) => {
+export const Full = ({ children, center = false, ...rest }: Props) => {
   return (
     <Column
       flex={1}
@@ -18,5 +18,3 @@ const Full = ({ children, center = false, ...rest }: Props) => {
     </Column>
   );
 };
-
-export default Full;
