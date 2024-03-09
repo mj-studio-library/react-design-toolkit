@@ -1,4 +1,287 @@
-export const palette = {
+export type Palette = {
+  transparent: string;
+  current: string;
+  black: string;
+  white: string;
+
+  whiteAlpha: {
+    50: string;
+    100: string;
+    200: string;
+    300: string;
+    400: string;
+    500: string;
+    600: string;
+    700: string;
+    800: string;
+    900: string;
+  };
+  whiteAlpha50: string;
+  whiteAlpha100: string;
+  whiteAlpha200: string;
+  whiteAlpha300: string;
+  whiteAlpha400: string;
+  whiteAlpha500: string;
+  whiteAlpha600: string;
+  whiteAlpha700: string;
+  whiteAlpha800: string;
+  whiteAlpha900: string;
+
+  blackAlpha: {
+    50: string;
+    100: string;
+    200: string;
+    300: string;
+    400: string;
+    500: string;
+    600: string;
+    700: string;
+    800: string;
+    900: string;
+  };
+  blackAlpha50: string;
+  blackAlpha100: string;
+  blackAlpha200: string;
+  blackAlpha300: string;
+  blackAlpha400: string;
+  blackAlpha500: string;
+  blackAlpha600: string;
+  blackAlpha700: string;
+  blackAlpha800: string;
+  blackAlpha900: string;
+
+  gray: {
+    50: string;
+    100: string;
+    200: string;
+    300: string;
+    400: string;
+    500: string;
+    600: string;
+    700: string;
+    800: string;
+    900: string;
+  };
+  gray50: string;
+  gray100: string;
+  gray200: string;
+  gray300: string;
+  gray400: string;
+  gray500: string;
+  gray600: string;
+  gray700: string;
+  gray800: string;
+  gray900: string;
+
+  red: {
+    50: string;
+    100: string;
+    200: string;
+    300: string;
+    400: string;
+    500: string;
+    600: string;
+    700: string;
+    800: string;
+    900: string;
+  };
+  red50: string;
+  red100: string;
+  red200: string;
+  red300: string;
+  red400: string;
+  red500: string;
+  red600: string;
+  red700: string;
+  red800: string;
+  red900: string;
+
+  orange: {
+    50: string;
+    100: string;
+    200: string;
+    300: string;
+    400: string;
+    500: string;
+    600: string;
+    700: string;
+    800: string;
+    900: string;
+  };
+  orange50: string;
+  orange100: string;
+  orange200: string;
+  orange300: string;
+  orange400: string;
+  orange500: string;
+  orange600: string;
+  orange700: string;
+  orange800: string;
+  orange900: string;
+
+  yellow: {
+    50: string;
+    100: string;
+    200: string;
+    300: string;
+    400: string;
+    500: string;
+    600: string;
+    700: string;
+    800: string;
+    900: string;
+  };
+  yellow50: string;
+  yellow100: string;
+  yellow200: string;
+  yellow300: string;
+  yellow400: string;
+  yellow500: string;
+  yellow600: string;
+  yellow700: string;
+  yellow800: string;
+  yellow900: string;
+
+  green: {
+    50: string;
+    100: string;
+    200: string;
+    300: string;
+    400: string;
+    500: string;
+    600: string;
+    700: string;
+    800: string;
+    900: string;
+  };
+  green50: string;
+  green100: string;
+  green200: string;
+  green300: string;
+  green400: string;
+  green500: string;
+  green600: string;
+  green700: string;
+  green800: string;
+  green900: string;
+
+  teal: {
+    50: string;
+    100: string;
+    200: string;
+    300: string;
+    400: string;
+    500: string;
+    600: string;
+    700: string;
+    800: string;
+    900: string;
+  };
+  teal50: string;
+  teal100: string;
+  teal200: string;
+  teal300: string;
+  teal400: string;
+  teal500: string;
+  teal600: string;
+  teal700: string;
+  teal800: string;
+  teal900: string;
+
+  blue: {
+    50: string;
+    100: string;
+    200: string;
+    300: string;
+    400: string;
+    500: string;
+    600: string;
+    700: string;
+    800: string;
+    900: string;
+  };
+  blue50: string;
+  blue100: string;
+  blue200: string;
+  blue300: string;
+  blue400: string;
+  blue500: string;
+  blue600: string;
+  blue700: string;
+  blue800: string;
+  blue900: string;
+
+  cyan: {
+    50: string;
+    100: string;
+    200: string;
+    300: string;
+    400: string;
+    500: string;
+    600: string;
+    700: string;
+    800: string;
+    900: string;
+  };
+  cyan50: string;
+  cyan100: string;
+  cyan200: string;
+  cyan300: string;
+  cyan400: string;
+  cyan500: string;
+  cyan600: string;
+  cyan700: string;
+  cyan800: string;
+  cyan900: string;
+
+  purple: {
+    50: string;
+    100: string;
+    200: string;
+    300: string;
+    400: string;
+    500: string;
+    600: string;
+    700: string;
+    800: string;
+    900: string;
+  };
+  purple50: string;
+  purple100: string;
+  purple200: string;
+  purple300: string;
+  purple400: string;
+  purple500: string;
+  purple600: string;
+  purple700: string;
+  purple800: string;
+  purple900: string;
+
+  pink: {
+    50: string;
+    100: string;
+    200: string;
+    300: string;
+    400: string;
+    500: string;
+    600: string;
+    700: string;
+    800: string;
+    900: string;
+  };
+  pink50: string;
+  pink100: string;
+  pink200: string;
+  pink300: string;
+  pink400: string;
+  pink500: string;
+  pink600: string;
+  pink700: string;
+  pink800: string;
+  pink900: string;
+};
+
+export const palette: Palette = {
   transparent: 'transparent',
   current: 'currentColor',
   black: '#000000',
@@ -280,7 +563,6 @@ export const palette = {
   pink800: '#702459',
   pink900: '#521B41',
 };
-export type SystemColors = typeof palette;
 export type ThemeColors = {
   background: string;
   text: string;
@@ -290,16 +572,10 @@ export type ThemeColors = {
   sub2: string;
   outline: string;
   hyperlink: string;
-  noteNoteBackground: string;
-  noteNoteForeground: string;
-  noteWarnBackground: string;
-  noteWarnForeground: string;
-  noteDangerBackground: string;
-  noteDangerForeground: string;
   error: string;
 };
-export type PaletteColor = SystemColors & ThemeColors;
-export const lightPalette: PaletteColor = {
+export type ThemedPalette = Palette & ThemeColors;
+export const lightPalette: ThemedPalette = {
   ...palette,
   background: 'rgb(255, 255, 255)',
   text: 'rgba(26,32,44)',
@@ -309,16 +585,10 @@ export const lightPalette: PaletteColor = {
   sub2: palette.gray400,
   outline: palette.gray200,
   hyperlink: palette.blue500,
-  noteNoteBackground: 'rgb(244,251,249)',
-  noteNoteForeground: '#3c5c43',
-  noteWarnBackground: 'rgb(254, 245, 231)',
-  noteWarnForeground: '#755936',
-  noteDangerBackground: '#f2dcde',
-  noteDangerForeground: '#70393e',
   error: palette.red500,
 };
 
-export const darkPalette: PaletteColor = {
+export const darkPalette: ThemedPalette = {
   ...palette,
   background: 'rgb(26,32,44)',
   text: 'rgba(255,255,255,0.92)',
@@ -328,11 +598,5 @@ export const darkPalette: PaletteColor = {
   sub2: palette.gray600,
   outline: palette.gray700,
   hyperlink: palette.blue300,
-  noteNoteBackground: 'rgba(43, 110, 98, 0.2)',
-  noteNoteForeground: 'white',
-  noteWarnBackground: 'rgba(182, 87, 0, 0.2)',
-  noteWarnForeground: 'white',
-  noteDangerBackground: '#521d2180',
-  noteDangerForeground: 'white',
   error: palette.red400,
 };

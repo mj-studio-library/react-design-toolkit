@@ -67,30 +67,6 @@ const baseTheme = _extend(withDefaultColorScheme({ colorScheme: 'orange' }), {
         default: lightPalette.hyperlink,
         _dark: darkPalette.hyperlink,
       },
-      noteNoteBackground: {
-        default: lightPalette.noteNoteBackground,
-        _dark: darkPalette.noteNoteBackground,
-      },
-      noteNoteForeground: {
-        default: lightPalette.noteNoteForeground,
-        _dark: darkPalette.noteNoteForeground,
-      },
-      noteWarnBackground: {
-        default: lightPalette.noteWarnBackground,
-        _dark: darkPalette.noteWarnBackground,
-      },
-      noteWarnForeground: {
-        default: lightPalette.noteWarnForeground,
-        _dark: darkPalette.noteWarnForeground,
-      },
-      noteDangerBackground: {
-        default: lightPalette.noteDangerBackground,
-        _dark: darkPalette.noteDangerBackground,
-      },
-      noteDangerForeground: {
-        default: lightPalette.noteDangerForeground,
-        _dark: darkPalette.noteDangerForeground,
-      },
       inlineCodeBackground: {
         default: lightPalette.gray100,
         _dark: darkPalette.surface,
