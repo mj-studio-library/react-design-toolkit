@@ -2,6 +2,7 @@
 // const babel = require('@rollup/plugin-babel');
 import commonjs from '@rollup/plugin-commonjs';
 import nodeResolve from '@rollup/plugin-node-resolve';
+import terser from '@rollup/plugin-terser';
 import banner from 'rollup-plugin-banner2';
 import peerDepsExternal from 'rollup-plugin-peer-deps-external';
 import postcss from 'rollup-plugin-postcss';
@@ -58,7 +59,7 @@ export default [
         return "'use client';\n";
       }),
       preserveDirectives(),
-      // terser({ compress: { directives: false } }),
+      terser({ compress: { directives: false } }),
     ],
   },
 ];
