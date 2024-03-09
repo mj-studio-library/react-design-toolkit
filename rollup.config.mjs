@@ -41,24 +41,12 @@ export default [
       commonjs(),
       peerDepsExternal(),
       postcss(),
-      // babel({
-      //   extensions: ['.ts', '.tsx', '.js', '.jsx'],
-      //   babelHelpers: 'bundled',
-      //   rootMode: 'upward',
-      //   presets: [
-      //     [
-      //       '@babel/preset-react',
-      //       {
-      //         runtime: 'automatic',
-      //       },
-      //     ],
-      //   ],
-      // }),
       ts({ tsconfig: './tsconfig.json' }),
       banner((chunk) => {
         const skip =
           useClientFileExclude.includes(chunk.fileName) ||
-          useClientPrefixInclude.some((prefix) => chunk.fileName.startsWith(prefix));
+          useClientPrefixInclude.some((prefix) => chunk.fileName.startsWith(prefix)) ||
+          !chunk.fileName.startsWith('src');
 
         if (skip) {
           // console.log('skipped', chunk.fileName);
