@@ -2008,9 +2008,9 @@ __metadata:
     react: "npm:^18.2.0"
     react-dom: "npm:^18.2.0"
     rollup: "npm:^4.12.1"
+    rollup-plugin-banner2: "npm:^1.2.2"
     rollup-plugin-peer-deps-external: "npm:^2.2.4"
     rollup-plugin-postcss: "npm:^4.0.2"
-    rollup-plugin-preserve-directives: "npm:^0.4.0"
     rollup-plugin-typescript2: "npm:^0.36.0"
     styled-components: "npm:^6.1.8"
     styled-system: "npm:^5.1.5"
@@ -2239,7 +2239,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@rollup/pluginutils@npm:^5.0.1, @rollup/pluginutils@npm:^5.1.0":
+"@rollup/pluginutils@npm:^5.0.1":
   version: 5.1.0
   resolution: "@rollup/pluginutils@npm:5.1.0"
   dependencies:
@@ -5982,7 +5982,16 @@ __metadata:
   languageName: node
   linkType: hard
 
-"magic-string@npm:^0.30.3, magic-string@npm:^0.30.5":
+"magic-string@npm:^0.25.7":
+  version: 0.25.9
+  resolution: "magic-string@npm:0.25.9"
+  dependencies:
+    sourcemap-codec: "npm:^1.4.8"
+  checksum: 10c0/37f5e01a7e8b19a072091f0b45ff127cda676232d373ce2c551a162dd4053c575ec048b9cbb4587a1f03adb6c5d0fd0dd49e8ab070cd2c83a4992b2182d9cb56
+  languageName: node
+  linkType: hard
+
+"magic-string@npm:^0.30.3":
   version: 0.30.8
   resolution: "magic-string@npm:0.30.8"
   dependencies:
@@ -7453,6 +7462,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"rollup-plugin-banner2@npm:^1.2.2":
+  version: 1.2.2
+  resolution: "rollup-plugin-banner2@npm:1.2.2"
+  dependencies:
+    magic-string: "npm:^0.25.7"
+  checksum: 10c0/dc17aa0cf2a3ba5923ef3845e2afc03c3585fc1be1caf7232462cd74a8522f20e80407d73a303c520ae77eacdf7fdc94df57e1c1cdd8d2c94fa8ca345509427d
+  languageName: node
+  linkType: hard
+
 "rollup-plugin-peer-deps-external@npm:^2.2.4":
   version: 2.2.4
   resolution: "rollup-plugin-peer-deps-external@npm:2.2.4"
@@ -7482,18 +7500,6 @@ __metadata:
   peerDependencies:
     postcss: 8.x
   checksum: 10c0/c35fde734c2985a0302ce06a8444c2d4cfeba8ac3d9776b48546dc4d819f92c679c120d6ab28ffd09b51056fc7797559b36c29aabb9deaf50f872587d473821e
-  languageName: node
-  linkType: hard
-
-"rollup-plugin-preserve-directives@npm:^0.4.0":
-  version: 0.4.0
-  resolution: "rollup-plugin-preserve-directives@npm:0.4.0"
-  dependencies:
-    "@rollup/pluginutils": "npm:^5.1.0"
-    magic-string: "npm:^0.30.5"
-  peerDependencies:
-    rollup: 2.x || 3.x || 4.x
-  checksum: 10c0/83e27b6cefe5d2185a39b79fa860644e60b53ed0c32942e1829023e10aa75a2fdd9c0d57e9a46eec4b60804d3fdb1ae51e847d5762f372b0f22fafcaca8c6a0e
   languageName: node
   linkType: hard
 
@@ -7822,6 +7828,13 @@ __metadata:
   version: 0.6.1
   resolution: "source-map@npm:0.6.1"
   checksum: 10c0/ab55398007c5e5532957cb0beee2368529618ac0ab372d789806f5718123cc4367d57de3904b4e6a4170eb5a0b0f41373066d02ca0735a0c4d75c7d328d3e011
+  languageName: node
+  linkType: hard
+
+"sourcemap-codec@npm:^1.4.8":
+  version: 1.4.8
+  resolution: "sourcemap-codec@npm:1.4.8"
+  checksum: 10c0/f099279fdaae070ff156df7414bbe39aad69cdd615454947ed3e19136bfdfcb4544952685ee73f56e17038f4578091e12b17b283ed8ac013882916594d95b9e6
   languageName: node
   linkType: hard
 

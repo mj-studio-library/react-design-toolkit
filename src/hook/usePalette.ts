@@ -1,6 +1,4 @@
-'use client';
-
-import { darkPalette, lightPalette } from '../styles/system/palette';
+import { darkPalette, lightPalette } from '../server/styles/palette';
 
 import { useDarkTheme } from './useDarkTheme';
 

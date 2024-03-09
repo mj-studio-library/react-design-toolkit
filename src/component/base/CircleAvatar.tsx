@@ -1,5 +1,3 @@
-'use client';
-
 import type { AvatarProps } from '@chakra-ui/react';
 import { Avatar } from '@chakra-ui/react';
 

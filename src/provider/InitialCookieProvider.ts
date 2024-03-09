@@ -1,5 +1,3 @@
-'use client';
-
 import { createCtx } from '@mj-studio/react-util';
 import type { RequestCookie } from 'next/dist/compiled/@edge-runtime/cookies';
 

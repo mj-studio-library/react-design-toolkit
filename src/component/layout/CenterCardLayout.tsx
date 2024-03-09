@@ -1,5 +1,3 @@
-'use client';
-
 import type { PropsWithChildren } from 'react';
 import { Card, Center } from '@chakra-ui/react';
 

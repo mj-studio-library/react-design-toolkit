@@ -1,10 +1,8 @@
-'use client';
-
 import type { ReactNode } from 'react';
 import { useEffect, useState } from 'react';
 
-import type { Breakpoints } from '../../styles/system/DesignToken';
-import { DT } from '../../styles/system/DesignToken';
+import type { Breakpoints } from '../../server/styles/DesignToken';
+import { DT } from '../../server/styles/DesignToken';
 
 export function MaxWidth({
   breakpoint: w,

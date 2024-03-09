@@ -1,5 +1,3 @@
-'use client';
-
 import { forwardRef } from 'react';
 import { Text as Inner, type TextProps as Props } from '@chakra-ui/react';
 import { is } from '@mj-studio/js-util';

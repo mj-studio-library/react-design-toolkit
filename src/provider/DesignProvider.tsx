@@ -1,12 +1,10 @@
-'use client';
-
 import type { PropsWithChildren } from 'react';
 import React from 'react';
 import { ChakraProvider, ColorModeScript, cookieStorageManagerSSR } from '@chakra-ui/react';
 import type { RequestCookie } from 'next/dist/compiled/@edge-runtime/cookies';
 
-import StyledComponentsRegistry from '../styles/registry';
-import ChakraTheme from '../styles/theme/ChakraTheme';
+import StyledComponentsRegistry from '../registry';
+import ChakraTheme from '../server/styles/ChakraTheme';
 
 import { InitialCookiesProvider } from './InitialCookieProvider';
 

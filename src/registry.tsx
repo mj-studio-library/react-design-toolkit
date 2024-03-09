@@ -1,5 +1,3 @@
-'use client';
-
 import React, { useState } from 'react';
 import isPropValid from '@emotion/is-prop-valid';
 import { useServerInsertedHTML } from 'next/navigation';

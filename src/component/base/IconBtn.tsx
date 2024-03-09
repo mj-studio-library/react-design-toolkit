@@ -1,5 +1,3 @@
-'use client';
-
 import { forwardRef } from 'react';
 import type { IconButtonProps } from '@chakra-ui/react';
 import { IconButton as Inner } from '@chakra-ui/react';

@@ -1,5 +1,3 @@
-'use client';
-
 import { useColorMode } from '@chakra-ui/react';
 
 import { useInitialCookiesContext } from '../provider/InitialCookieProvider';

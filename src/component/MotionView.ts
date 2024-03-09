@@ -1,5 +1,3 @@
-'use client';
-
 import type { ComponentProps } from 'react';
 import type { LinkProps } from '@chakra-ui/next-js';
 import type { CustomDomComponent } from 'framer-motion';

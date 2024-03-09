@@ -8,8 +8,8 @@ import { defineStyleConfig, extendTheme, withDefaultColorScheme } from '@chakra-
 import { mode } from '@chakra-ui/theme-tools';
 import type { Dict } from '@chakra-ui/utils';
 
-import { DT } from '../system/DesignToken';
-import { darkPalette, lightPalette, palette } from '../system/palette';
+import { DT } from './DesignToken';
+import { darkPalette, lightPalette, palette } from './palette';
 
 const config: ThemeConfig = {
   initialColorMode: 'dark',

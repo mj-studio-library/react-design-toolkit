@@ -1,5 +1,3 @@
-'use client';
-
 import type { LinkProps } from '@chakra-ui/next-js';
 
 import { Link } from '../../server/component/Link';

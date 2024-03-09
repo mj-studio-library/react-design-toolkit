@@ -1,5 +1,3 @@
-'use client';
-
 import type { ResponsiveArray, ThemeTypings } from '@chakra-ui/styled-system';
 import { is } from '@mj-studio/js-util';
 import type * as CSS from 'csstype';
@@ -7,7 +5,7 @@ import styled from 'styled-components';
 import { variant } from 'styled-system';
 
 import type { BetterSystemStyleObject } from '../../@types/common-types';
-import { convertToNegativeSpaceValue, DT, ThemeSpaceHalfs } from '../../styles/system/DesignToken';
+import { convertToNegativeSpaceValue, DT, ThemeSpaceHalfs } from '../../server/styles/DesignToken';
 
 import { Row } from './Row';
 import type { ViewProps } from './View';

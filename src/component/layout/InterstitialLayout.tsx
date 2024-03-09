@@ -1,12 +1,10 @@
-'use client';
-
 import type { PropsWithChildren, ReactElement } from 'react';
 import { Card } from '@chakra-ui/react';
 import { is } from '@mj-studio/js-util';
 import { motion } from 'framer-motion';
 
 import { usePalette } from '../../hook/usePalette';
-import { DT } from '../../styles/system/DesignToken';
+import { DT } from '../../server/styles/DesignToken';
 import { Column, ColumnCenter } from '../base/Column';
 import { RowCenter } from '../base/Row';
 import { Txt } from '../base/Txt';
