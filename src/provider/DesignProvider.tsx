@@ -3,6 +3,7 @@ import React from 'react';
 import { ChakraProvider, ColorModeScript, cookieStorageManagerSSR } from '@chakra-ui/react';
 import type { RequestCookie } from 'next/dist/compiled/@edge-runtime/cookies';
 
+import { AppAlertDialogProvider } from '../component/dialog/AppAlertDialog';
 import StyledComponentsRegistry from '../registry';
 import ChakraTheme from '../server/styles/ChakraTheme';
 
@@ -26,7 +27,7 @@ export const DesignProvider = ({ children, cookies, cookiesString }: Props) => {
           colorModeManager={cookieStorageManagerSSR(cookiesString)}
           theme={ChakraTheme}
         >
-          {children}
+          <AppAlertDialogProvider>{children}</AppAlertDialogProvider>
         </ChakraProvider>
       </StyledComponentsRegistry>
     </InitialCookiesProvider>
