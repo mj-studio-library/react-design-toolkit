@@ -1,3 +1,5 @@
+'use client';
+
 import { forwardRef } from 'react';
 import type { ButtonProps as InnerProps } from '@chakra-ui/react';
 import { Button as Inner } from '@chakra-ui/react';
