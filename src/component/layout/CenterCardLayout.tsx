@@ -5,12 +5,12 @@ import { ColumnCenter } from '../base/Column';
 import { Txt } from '../base/Txt';
 import { MotionView } from '../MotionView';
 
-type Props = PropsWithChildren<{
+export type CenterCardLayoutProps = PropsWithChildren<{
   title: string;
   body: string;
 }>;
 
-function CenterCardLayout({ children, title, body }: Props) {
+export function CenterCardLayout({ children, title, body }: CenterCardLayoutProps) {
   return (
     <Center flex={1} h={'100%'} position={'relative'} overflow={'hidden'}>
       <Card
@@ -36,5 +36,3 @@ function CenterCardLayout({ children, title, body }: Props) {
     </Center>
   );
 }
-
-export default CenterCardLayout;

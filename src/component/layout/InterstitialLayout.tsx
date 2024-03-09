@@ -10,14 +10,20 @@ import { RowCenter } from '../base/Row';
 import { Txt } from '../base/Txt';
 import { MotionView } from '../MotionView';
 
-type Props = PropsWithChildren<{
+export type InterstitialLayoutProps = PropsWithChildren<{
   title: string;
   description?: string;
   icon?: ReactElement;
   logo?: ReactElement;
 }>;
 
-function InterstitialLayout({ children, title, description, icon, logo }: Props) {
+export function InterstitialLayout({
+  children,
+  title,
+  description,
+  icon,
+  logo,
+}: InterstitialLayoutProps) {
   const c = usePalette();
 
   return (
@@ -57,5 +63,3 @@ function InterstitialLayout({ children, title, description, icon, logo }: Props)
     </ColumnCenter>
   );
 }
-
-export default InterstitialLayout;
