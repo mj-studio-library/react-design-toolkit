@@ -10,7 +10,7 @@ import { InitialCookiesProvider } from './InitialCookieProvider';
 
 type Props = PropsWithChildren<{ cookies: RequestCookie[]; cookiesString: string }>;
 
-const DesignProvider = ({ children, cookies, cookiesString }: Props) => {
+export const DesignProvider = ({ children, cookies, cookiesString }: Props) => {
   return (
     <InitialCookiesProvider cookies={cookies}>
       <ColorModeScript
@@ -32,5 +32,3 @@ const DesignProvider = ({ children, cookies, cookiesString }: Props) => {
     </InitialCookiesProvider>
   );
 };
-
-export default DesignProvider;
