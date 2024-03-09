@@ -45,7 +45,7 @@ export default [
       //   ],
       // }),
       ts({ tsconfig: './tsconfig.json' }),
-      preserveDirectives({ suppressPreserveModulesWarning: true }),
+      preserveDirectives(),
       // terser(),
     ],
   },

@@ -1,4 +1,4 @@
-import 'client-only';
+'use client';
 
 import { useColorMode } from '@chakra-ui/react';
 

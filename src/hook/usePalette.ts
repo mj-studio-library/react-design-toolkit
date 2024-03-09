@@ -1,3 +1,5 @@
+'use client';
+
 import { darkPalette, lightPalette } from '../styles/theme/palette';
 
 import { useDarkTheme } from './useDarkTheme';

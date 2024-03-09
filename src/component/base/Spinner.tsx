@@ -1,3 +1,5 @@
+'use client';
+
 import type { SpinnerProps } from '@chakra-ui/react';
 import { Spinner as Inner } from '@chakra-ui/react';
 
