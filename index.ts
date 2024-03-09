@@ -26,3 +26,5 @@ export * from './src/component/base/Img';
 export * from './src/component/base/Link';
 export * from './src/component/dialog/AppAlertDialog';
 export * from './src/component/dialog/Feedback';
+export * from './src/component/base/Full';
+export * from './src/component/base/AbsoluteFill';
