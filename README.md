@@ -30,6 +30,8 @@ yarn add @mj-studio/react-design-toolkit
 </DesignProvider>
 ```
 
+You should this in React Server Component
+
 ## Troubleshooting
 
 This package is on alpha phase.
