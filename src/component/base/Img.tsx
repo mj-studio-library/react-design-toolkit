@@ -1,3 +1,5 @@
 'use client';
 
-export { Image as Img } from '@chakra-ui/next-js';
+import { Image } from '@chakra-ui/image';
+
+export { Image };
