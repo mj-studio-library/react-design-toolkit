@@ -22,6 +22,7 @@ export * from './src/hook/usePalette';
 export * from './src/provider/DesignProvider';
 export * from './src/server/styles/DesignToken';
 export * from './src/server/styles/palette';
+export * from './src/server/styles/Theme';
 export * from './src/component/base/Img';
 export * from './src/component/base/Link';
 export * from './src/component/dialog/AppAlertDialog';
