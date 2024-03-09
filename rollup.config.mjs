@@ -15,7 +15,7 @@ export default [
         dir: 'dist',
         format: 'cjs',
         interop: 'auto',
-        preserveModules: true,
+        preserveModules: false,
       },
       // {
       //   dir: 'esm',
