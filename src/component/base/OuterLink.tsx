@@ -4,8 +4,6 @@ import { Link } from './Link';
 
 type Props = {} & LinkProps;
 
-function OuterLink({ ...rest }: Props) {
+export function OuterLink({ ...rest }: Props) {
   return <Link target={'_blank'} rel={'noopener noreferrer'} {...rest} />;
 }
-
-export default OuterLink;

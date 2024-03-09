@@ -6,18 +6,23 @@ import ICChevronDown from '../icon/ICChevronDown';
 import type { BtnProps } from './Btn';
 import { Btn } from './Btn';
 
-type MenuItem<T> = {
+export type MenuItem<T> = {
   value: T;
   text: string;
 };
-type Props<T> = {
+export type MenuProps<T> = {
   selected: string;
   buttonProps?: BtnProps;
   items: MenuItem<T>[];
   onSelected: (params: { index: number; value: T }) => void;
 };
 
-function Menu<T extends string | number>({ selected, buttonProps, items, onSelected }: Props<T>) {
+export function Menu<T extends string | number>({
+  selected,
+  buttonProps,
+  items,
+  onSelected,
+}: MenuProps<T>) {
   return (
     <ChakraMenu>
       <MenuButton as={Btn} variant={'ghost'} rightIcon={<ICChevronDown />} {...buttonProps}>
@@ -33,5 +38,3 @@ function Menu<T extends string | number>({ selected, buttonProps, items, onSelec
     </ChakraMenu>
   );
 }
-
-export default Menu;
