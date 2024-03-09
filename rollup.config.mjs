@@ -4,7 +4,7 @@ import commonjs from '@rollup/plugin-commonjs';
 import nodeResolve from '@rollup/plugin-node-resolve';
 import terser from '@rollup/plugin-terser';
 import peerDepsExternal from 'rollup-plugin-peer-deps-external';
-// import * as postcss from 'rollup-plugin-postcss';
+import postcss from 'rollup-plugin-postcss';
 import ts from 'rollup-plugin-typescript2';
 
 export default [
@@ -24,11 +24,12 @@ export default [
       //   // preserveModulesRoot: 'src',
       // },
     ],
+    external: ['react'],
     plugins: [
       nodeResolve({ extensions: ['.ts', '.tsx', '.js', '.jsx'] }),
       commonjs(),
       peerDepsExternal(),
-      // postcss(),
+      postcss(),
       // babel({
       //   extensions: ['.ts', '.tsx', '.js', '.jsx'],
       //   babelHelpers: 'bundled',
