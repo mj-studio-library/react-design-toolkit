@@ -1,6 +1,6 @@
 {
   "name": "@mj-studio/react-design-toolkit",
-  "version": "0.0.23",
+  "version": "0.0.24",
   "description": "A React Design Toolkit top of the chakra ui",
   "repository": {
     "type": "git",
@@ -42,6 +42,7 @@
     "rollup-plugin-banner2": "^1.2.2",
     "rollup-plugin-peer-deps-external": "^2.2.4",
     "rollup-plugin-postcss": "^4.0.2",
+    "rollup-plugin-preserve-directives": "^0.4.0",
     "rollup-plugin-typescript2": "^0.36.0",
     "typescript": "5.3.3",
     "zx": "^7.2.3"

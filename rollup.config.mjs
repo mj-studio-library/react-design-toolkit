@@ -5,6 +5,7 @@ import nodeResolve from '@rollup/plugin-node-resolve';
 import banner from 'rollup-plugin-banner2';
 import peerDepsExternal from 'rollup-plugin-peer-deps-external';
 import postcss from 'rollup-plugin-postcss';
+import preserveDirectives from 'rollup-plugin-preserve-directives';
 import ts from 'rollup-plugin-typescript2';
 
 const useClientFileExclude = ['index'].reduce((acc, name) => {
@@ -56,6 +57,7 @@ export default [
 
         return "'use client';\n";
       }),
+      preserveDirectives(),
       // terser({ compress: { directives: false } }),
     ],
   },
