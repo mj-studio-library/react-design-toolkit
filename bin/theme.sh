@@ -1,3 +1,3 @@
 #!/bin/bash
 
-yarn chakra-cli tokens $1
+chakra-cli tokens $1
