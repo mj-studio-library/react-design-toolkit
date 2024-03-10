@@ -14,13 +14,25 @@ import StyledComponentsRegistry from '../registry';
 
 import { InitialCookiesProvider } from './InitialCookieProvider';
 
-type Props = PropsWithChildren<{ cookies: RequestCookie[]; cookiesString: string; theme?: Dict }>;
+type Props = PropsWithChildren<{
+  cookies: RequestCookie[];
+  cookiesString: string;
+  theme?: Dict;
+  initialColorMode?: 'dark' | 'ligh';
+}>;
 
-export const DesignProvider = ({ children, cookies, cookiesString, theme }: Props) => {
+export const DesignProvider = ({
+  children,
+  cookies,
+  cookiesString,
+  theme,
+  initialColorMode,
+}: Props) => {
   return (
     <InitialCookiesProvider cookies={cookies}>
       <ColorModeScript
         initialColorMode={
+          initialColorMode ??
           cookies.find((i) => i.name === 'chakra-ui-color-mode')?.value === 'dark'
             ? 'dark'
             : 'light'
