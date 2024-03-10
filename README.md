@@ -59,7 +59,7 @@ Pass theme object created by Step 1 to `theme` prop.
 
 All components are wrapping of Chakra-UI components.
 
-So you can use all the styled-system syntax used in it.
+So you can use all the `styled-system` syntax used in it.
 
 Currently, css variables always have a prefix of `--ck`, but this will be changed so that it can be set in a future update.
 

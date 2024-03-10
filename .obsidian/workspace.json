@@ -148,5 +148,17 @@
     }
   },
   "active": "6b9cbad5ff8537c2",
-  "lastOpenFiles": []
+  "lastOpenFiles": [
+    "esm/_virtual/isPrimitive.js",
+    "esm/_virtual/toFixedIfNeed.js",
+    "esm/_virtual/unique.js",
+    "esm/_virtual/toggled.js",
+    "esm/_virtual/toFixed.js",
+    "esm/_virtual/formatJson.js",
+    "esm/_virtual/setIntervalWithTimeout.js",
+    "esm/_virtual/randomItem.js",
+    "esm/_virtual/padZero.js",
+    "esm/_virtual/numberWithComma.js",
+    "esm/_virtual/lastMatchIndex.js"
+  ]
 }
