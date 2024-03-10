@@ -2028,6 +2028,8 @@ __metadata:
     react-dom: ">=18.0.0"
     styled-components: ^6.1.8
     styled-system: ^5.1.5
+  bin:
+    theme: bin/theme.js
   languageName: unknown
   linkType: soft
 
