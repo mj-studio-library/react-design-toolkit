@@ -1,5 +1,7 @@
 # MJStudio React Design Toolkit
 
+![](https://raw.githubusercontent.com/mym0404/image-archive/master/202403102012338.png)
+
 An opinioned design system toolkit tailored for React applications using **Next.js**
 
 This package is top of the Chakra UI, incorporating related libraries internally.
@@ -65,7 +67,18 @@ Currently, css variables always have a prefix of `--ck`, but this will be change
 
 For example, colors can be used in CSS like `var(--ck-colors-red-500)`.
 
+Here is an example.
 
+```tsx
+export default function Page() {  
+  return (  
+    <Column>  
+      <Card colorScheme={'red'} mt={2} bg={'background'} />  
+      <Txt color={'red50.50'}>{'123'}</Txt>  
+    </Column>  
+  );  
+}
+```
 
 ### Change & Extend Theme Token
 
@@ -75,20 +88,40 @@ The properties of theme `Dict` are same as Chakra-UI Itself.
 
 You can learn more about in [Chakra-UI Docs](https://chakra-ui.com/docs/styled-system/customize-theme)
 
-#### Change default theme tokens
+#### Change & Extend base theme tokens
 
 A list of all theme tokens can be found in `node_modules/@chakra-ui/styled-system/dist/theming.types.d.ts` by executing the following Type Generation command after installing the package.
 
 ```
-theme {{path}}
+// yarn
+yarn theme lib/AppTheme.ts
+
+// npm
+npm run theme lib/AppTheme.ts
 ```
-#### Extend theme tokens
 
+In your Theme file, 
 
+```tsx
+'use client';  
+  
+import { extendBaseTheme } from '@mj-studio/react-design-toolkit';  
+  
+export default extendBaseTheme({  
+  semanticTokens: {  
+    colors: {  
+      background: {  
+        default: 'red',  
+        _dark: 'blue',  
+      },  
+    },  
+  },  
+});
+```
 
-#### Example
+You can also utilize the charka-ui method of creating custom themes from objects exported as themes.
 
-
+For detailed instructions, please refer to the following. [docs](https://chakra-ui.com/docs/styled-system/customize-theme)
 
 ### Components
 
@@ -101,6 +134,26 @@ theme {{path}}
 
 ### TypeScript & CLI
 
+If you want to use Typescript, run this command from your project root.
+
+```sh
+// yarn
+yarn theme lib/AppTheme.ts
+
+// npm
+npm run theme lib/AppTheme.ts
+```
+
+It will generate  theme type definition file to `node_modules/@chakra-ui/styled-system/dist/theming.types.d.ts` by your theme file configuration.
+
+TypeScript will recommend tokens from the theme as much as possible, but this does not guarantee complete type safety.
+
+Basically, properties must also be able to accept values that can be expressed in CSS, so if you insert a non-existent theme token value, the feature will not work properly.
+
+
+
 ## Troubleshooting
 
 This package is on alpha phase.
+
+Any issue filing is welcome 🤗
