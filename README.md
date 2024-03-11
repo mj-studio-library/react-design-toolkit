@@ -1,6 +1,6 @@
 # MJStudio React Design Toolkit
 
-![](https://raw.githubusercontent.com/mym0404/image-archive/master/202403102012338.png)
+![ogimage-1260-630](https://github.com/mj-studio-library/react-design-toolkit/assets/33388801/daedb570-b64e-44eb-945c-ff151081e4dc)
 
 An opinioned design system toolkit tailored for React applications using **Next.js**
 
