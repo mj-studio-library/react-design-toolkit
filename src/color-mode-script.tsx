@@ -1,8 +1,11 @@
 import Script from 'next/script';
 
 export interface ColorModeScriptProps {
+  // eslint-disable-next-line react/no-unused-prop-types
   type?: 'localStorage' | 'cookie';
+  // eslint-disable-next-line react/no-unused-prop-types
   initialColorMode?: 'light' | 'dark' | 'system';
+  // eslint-disable-next-line react/no-unused-prop-types
   storageKey?: string;
   nonce?: string;
 }
