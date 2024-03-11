@@ -1,10 +1,14 @@
 import type { PropsWithChildren } from 'react';
 import React from 'react';
-import { baseTheme, ChakraProvider, cookieStorageManagerSSR } from '@chakra-ui/react';
+import {
+  baseTheme,
+  ChakraProvider,
+  ColorModeScript,
+  cookieStorageManagerSSR,
+} from '@chakra-ui/react';
 import type { Dict } from '@chakra-ui/utils';
 import type { RequestCookie } from 'next/dist/compiled/@edge-runtime/cookies';
 
-import { ColorModeScript } from '../color-mode-script';
 import { AppAlertDialogProvider } from '../component/dialog/AppAlertDialog';
 import StyledComponentsRegistry from '../registry';
 
