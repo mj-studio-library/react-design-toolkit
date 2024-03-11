@@ -1944,9 +1944,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@mj-studio/eslint-config-node@npm:0.1.12":
-  version: 0.1.12
-  resolution: "@mj-studio/eslint-config-node@npm:0.1.12"
+"@mj-studio/eslint-config-node@npm:1.0.1":
+  version: 1.0.1
+  resolution: "@mj-studio/eslint-config-node@npm:1.0.1"
   dependencies:
     "@typescript-eslint/eslint-plugin": "npm:latest"
     "@typescript-eslint/parser": "npm:latest"
@@ -1957,21 +1957,21 @@ __metadata:
   peerDependencies:
     eslint: ">=7"
     prettier: "*"
-  checksum: 10c0/10b1ac1f3a7605fa311bb9d1ddd65ac8c3236f1c578acc85e442b83901d813113d81f952e9633a29467938736407e64904ac240ae57a97c1a8fbe295d460402c
+  checksum: 10c0/a7f2bfcc49e30bd0d873e77e58a8d0e24ebcaaf9c074739c9c5eda27331114b559508672332ffff4b55c9066a6302a3a9d18d6e306898fc8935e8c4a9a8ee406
   languageName: node
   linkType: hard
 
-"@mj-studio/eslint-config-react@npm:^0.1.12":
-  version: 0.1.12
-  resolution: "@mj-studio/eslint-config-react@npm:0.1.12"
+"@mj-studio/eslint-config-react@npm:^1.0.1":
+  version: 1.0.1
+  resolution: "@mj-studio/eslint-config-react@npm:1.0.1"
   dependencies:
-    "@mj-studio/eslint-config-node": "npm:0.1.12"
+    "@mj-studio/eslint-config-node": "npm:1.0.1"
     eslint-plugin-react: "npm:latest"
     eslint-plugin-react-hooks: "npm:*"
   peerDependencies:
     eslint: ">=7"
     prettier: "*"
-  checksum: 10c0/65a3696ff232f417c94c53f87a72ab4f3543d3460cf9cc7a98598da6dcc5280f45eafc174cbb577b175fb5e28b63e82da31dddd16c1b7925586299141247d024
+  checksum: 10c0/9a79d297c530472d77ccd4702fe49ad8cdd80d2f97b6dd7845dcfea1710fad687f04bec0860db3accc83a8ae8d429e3c7f7a5f8bc55ea76ff7db98ea89f755c0
   languageName: node
   linkType: hard
 
@@ -1991,7 +1991,7 @@ __metadata:
     "@chakra-ui/react": "npm:^2.8.1"
     "@emotion/react": "npm:^11.11.3"
     "@emotion/styled": "npm:^11.11.0"
-    "@mj-studio/eslint-config-react": "npm:^0.1.12"
+    "@mj-studio/eslint-config-react": "npm:^1.0.1"
     "@mj-studio/js-util": "npm:^1.0.19"
     "@mj-studio/react-util": "npm:^0.0.20"
     "@rollup/plugin-commonjs": "npm:^25.0.7"
