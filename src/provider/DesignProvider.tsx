@@ -15,7 +15,8 @@ import { InitialCookiesProvider } from './InitialCookieProvider';
 
 type Props = PropsWithChildren<{
   theme?: Dict;
-  initialColorMode?: 'dark' | 'light';
+  /** color mode of theme, default: light */
+  colorMode?: 'dark' | 'light';
   enableColorModeScript?: boolean;
 }>;
 
@@ -23,17 +24,17 @@ const cookieKey = 'chakra-ui-color-mode';
 export const DesignProvider = ({
   children,
   theme,
-  initialColorMode = 'light',
+  colorMode = 'light',
   enableColorModeScript = true,
 }: Props) => {
   return (
-    <InitialCookiesProvider cookies={[{ name: cookieKey, value: initialColorMode }]}>
+    <InitialCookiesProvider cookies={[{ name: cookieKey, value: colorMode }]}>
       {enableColorModeScript ? (
-        <ColorModeScript initialColorMode={initialColorMode} type={'cookie'} />
+        <ColorModeScript initialColorMode={colorMode} type={'cookie'} />
       ) : null}
       <StyledComponentsRegistry>
         <ChakraProvider
-          colorModeManager={cookieStorageManagerSSR(`cookieKey=${initialColorMode}`)}
+          colorModeManager={cookieStorageManagerSSR(`${cookieKey}=${colorMode}`)}
           theme={theme ?? baseTheme}
         >
           <AppAlertDialogProvider>{children}</AppAlertDialogProvider>
