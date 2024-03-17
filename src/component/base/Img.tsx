@@ -17,6 +17,7 @@ const Img = forwardRef<HTMLImageElement, ImgProps>(
     <Image
       ref={ref}
       {...rest}
+      objectFit={objectFit ?? style?.objectFit}
       style={{ objectFit, ...style }}
       width={width ?? w}
       height={height ?? h}
