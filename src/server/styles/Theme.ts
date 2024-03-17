@@ -4,7 +4,7 @@ import type {
   ThemeConfig,
   ThemeOverride,
 } from '@chakra-ui/react';
-import { defineStyleConfig, extendTheme, withDefaultColorScheme } from '@chakra-ui/react';
+import { extendTheme, withDefaultColorScheme } from '@chakra-ui/react';
 import { mode } from '@chakra-ui/theme-tools';
 import type { Dict } from '@chakra-ui/utils';
 
@@ -110,18 +110,6 @@ const baseTheme = _extend(withDefaultColorScheme({ colorScheme: 'orange' }), {
         '&:hover': { textDecoration: 'none' },
       },
     },
-    NoteCard: defineStyleConfig({
-      baseStyle: {
-        p: [4, 6, 8],
-        borderWidth: 1,
-        fontWeight: '500',
-      },
-      variants: {
-        note: {},
-        warn: {},
-        danger: {},
-      },
-    }),
     Textarea: {
       defaultProps: {
         variant: 'filled',
