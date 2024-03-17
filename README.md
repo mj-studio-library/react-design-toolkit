@@ -48,7 +48,7 @@ Extend & Extend Theme token is described as the following section.
 `app/layout.tsx`
 
 ```tsx
-<DesignProvider cookies={cookies().getAll()} cookiesString={cookies().toString()} theme={AppTheme}>
+<DesignProvider initialColorMode={'dark' /* or light */ } theme={AppTheme}>
   {children}
 </DesignProvider>
 ```
@@ -63,7 +63,7 @@ All components are wrapping of Chakra-UI components.
 
 So you can use all the `styled-system` syntax used in it.
 
-Currently, css variables always have a prefix of `--ck`, but this will be changed so that it can be set in a future update.
+Currently, css variables always have a prefix of `--ck`, this can be changed by chakra-ui `css-var-prefix` config feature.
 
 For example, colors can be used in CSS like `var(--ck-colors-red-500)`.
 
