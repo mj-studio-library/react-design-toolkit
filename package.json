@@ -6,11 +6,13 @@
     "type": "git",
     "url": "git+https://github.com/mj-studio-library/react-design-toolkit.git"
   },
+  "homepage": "https://github.com/mj-studio-library/react-design-toolkit",
   "scripts": {
     "t": "eslint src && yarn tsc",
     "build": "yarn t && rm -rf dist && rm -rf esm && rollup --config rollup.config.mjs",
     "release": "yarn t && zx tool/publish.mjs",
-    "icon": "zx tool/svg_gen.mjs"
+    "icon": "zx tool/svg_gen.mjs",
+    "prepare": "husky"
   },
   "bin": {
     "theme": "bin/theme.js"
@@ -23,6 +25,8 @@
     "@chakra-ui/cli": "^2.4.1",
     "@chakra-ui/next-js": "^2.2.0",
     "@chakra-ui/react": "^2.8.1",
+    "@commitlint/cli": "^19.1.0",
+    "@commitlint/config-conventional": "^19.1.0",
     "@emotion/react": "^11.11.3",
     "@emotion/styled": "^11.11.0",
     "@mj-studio/eslint-config-react": "^1.0.1",
@@ -32,8 +36,10 @@
     "@svgr/cli": "^8.1.0",
     "@types/react": "^18.2.20",
     "@types/styled-system": "^5.1.22",
+    "cz-conventional-changelog": "^3.3.0",
     "eslint": "^8.56.0",
     "framer-motion": "^11.0.8",
+    "husky": "^9.0.11",
     "next": ">=14",
     "postcss": "^8.4.35",
     "prettier": "^3.2.5",
@@ -45,6 +51,7 @@
     "rollup-plugin-postcss": "^4.0.2",
     "rollup-plugin-preserve-directives": "^0.4.0",
     "rollup-plugin-typescript2": "^0.36.0",
+    "semantic-release": "^23.0.2",
     "styled-components": "^6.1.8",
     "styled-system": "^5.1.5",
     "typescript": "5.3.3",
@@ -81,5 +88,10 @@
     }
   },
   "author": "MJ Studio",
-  "license": "MIT"
+  "license": "MIT",
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  }
 }
