@@ -7,7 +7,6 @@ import {
   cookieStorageManagerSSR,
 } from '@chakra-ui/react';
 import type { Dict } from '@chakra-ui/utils';
-import type { RequestCookie } from 'next/dist/compiled/@edge-runtime/cookies';
 
 import { AppAlertDialogProvider } from '../component/dialog/AppAlertDialog';
 import StyledComponentsRegistry from '../registry';
@@ -15,37 +14,26 @@ import StyledComponentsRegistry from '../registry';
 import { InitialCookiesProvider } from './InitialCookieProvider';
 
 type Props = PropsWithChildren<{
-  cookies: RequestCookie[];
-  cookiesString: string;
   theme?: Dict;
-  initialColorMode?: 'dark' | 'ligh';
+  initialColorMode?: 'dark' | 'light';
   enableColorModeScript?: boolean;
 }>;
 
+const cookieKey = 'chakra-ui-color-mode';
 export const DesignProvider = ({
   children,
-  cookies,
-  cookiesString,
   theme,
-  initialColorMode,
+  initialColorMode = 'light',
   enableColorModeScript = true,
 }: Props) => {
   return (
-    <InitialCookiesProvider cookies={cookies}>
+    <InitialCookiesProvider cookies={[{ name: cookieKey, value: initialColorMode }]}>
       {enableColorModeScript ? (
-        <ColorModeScript
-          initialColorMode={
-            initialColorMode ??
-            cookies.find((i) => i.name === 'chakra-ui-color-mode')?.value === 'dark'
-              ? 'dark'
-              : 'light'
-          }
-          type={'cookie'}
-        />
+        <ColorModeScript initialColorMode={initialColorMode} type={'cookie'} />
       ) : null}
       <StyledComponentsRegistry>
         <ChakraProvider
-          colorModeManager={cookieStorageManagerSSR(cookiesString)}
+          colorModeManager={cookieStorageManagerSSR(`cookieKey=${initialColorMode}`)}
           theme={theme ?? baseTheme}
         >
           <AppAlertDialogProvider>{children}</AppAlertDialogProvider>
