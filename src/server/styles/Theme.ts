@@ -75,18 +75,6 @@ const baseTheme = _extend(withDefaultColorScheme({ colorScheme: 'orange' }), {
         default: lightPalette.error,
         _dark: darkPalette.error,
       },
-      nucleusStroke: {
-        default: lightPalette.sub2,
-        _dark: darkPalette.sub1,
-      },
-      nucleusCircle: {
-        default: '#515151',
-        _dark: '#C2C2C2',
-      },
-      nucleusCircleStroke: {
-        default: '#FFFFFF',
-        _dark: '#151515',
-      },
       warning: {
         default: lightPalette.orange400,
         _dark: lightPalette.orange300,
