@@ -13,6 +13,7 @@ export * from './src/component/base/Row';
 export * from './src/component/base/Spinner';
 export * from './src/component/base/Txt';
 export * from './src/component/base/View';
+export * from './src/component/base/Card';
 export * from './src/component/layout/CenterCardLayout';
 export * from './src/component/layout/InterstitialLayout';
 export * from './src/component/util/ClientOnly';
