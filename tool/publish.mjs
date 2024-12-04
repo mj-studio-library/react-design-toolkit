@@ -10,6 +10,6 @@ await fs.writeFile('package.json', JSON.stringify(pkg, null, 2));
 const v = pkg.version;
 
 await $`yarn build`;
-await $`git add . && git commit -m "Release ${v}"`;
+await $`git add . && git commit --allow-empty -m "chore: release ${v}"`;
 await $`npm publish --access public`;
 await $`git push`;
