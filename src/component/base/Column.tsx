@@ -1,3 +1,5 @@
+'use client';
+
 import React, { forwardRef } from 'react';
 import type { StackProps } from '@chakra-ui/react';
 import { VStack } from '@chakra-ui/react';
